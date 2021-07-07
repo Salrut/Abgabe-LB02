@@ -47,6 +47,21 @@ function validateUser(userObj) {
     result = validateLib.checkNumber("number", userObj.number);
     if (result.isNotValid) { return result; }
 
+    //check password syntax
+    result = validateLib.checkPassword("password", userObj.password);
+    if (result.isNotValid) { return result; }
+
+    //check lastname syntax
+    result = validateLib.checkLastname("lastname", userObj.lastname);
+    if (result.isNotValid) { return result; }
+
+    //check firstname syntax
+    result = validateLib.checkFirstname("firstname", userObj.firstname);
+    if (result.isNotValid) { return result; }
+
+    //check username syntax
+    result = validateLib.checkUsername("username", userObj.username);
+    if (result.isNotValid) { return result; }
 
     //all inputs are valid and isNotValid=false
     return false;

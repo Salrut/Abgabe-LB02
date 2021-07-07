@@ -7,5 +7,32 @@
     "number": "0791571496",
     "email": "salome.ruetsche@bluewin.ch",
     "password": "12345678"
+  },
+  {
+    "id": "9dd40106-3382-44c5-83c8-14396a5e6126",
+    "firstname": "Petra",
+    "lastname": "Muster",
+    "username": "muster",
+    "number": "0791571498",
+    "email": "petra.muster@bluewin.ch",
+    "password": "12345678"
+  },
+  {
+    "id": "c3145c04-b79e-42fe-84f7-4f36dd1d49ab",
+    "firstname": "Petra",
+    "lastname": "Muster",
+    "username": "muster",
+    "number": "0791571498",
+    "email": "petra.muster@bluewin.ch",
+    "password": "12345678"
+  },
+  {
+    "id": "1b06a908-a493-4464-8780-2adf5e2b2720",
+    "firstname": "Petra",
+    "lastname": "Muster",
+    "username": "muster",
+    "number": "0791571498",
+    "email": "petra.muster@bluewin.ch",
+    "password": "12345678"
   }
 ]

@@ -91,7 +91,7 @@ function checkFirstname(id,input) {
         msg: showSuccess(id)
     }
     //const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const re = /^0(2[1-246-7]|3[1-4]|4[13-4]|5[25-6]|6[1-2]|7[15-68-9]|8[17]|91)[0-9]{7}/;
+    const re = /^[a-zA-Z]+$/;
     if (!re.test(input.trim())) {
         result = {
             isNotValid: true,
@@ -101,7 +101,6 @@ function checkFirstname(id,input) {
     return result;
 }
 
-
 // Check Password is valid
 function checkPassword(id,input) {
     //Default: is valid
@@ -110,7 +109,7 @@ function checkPassword(id,input) {
         msg: showSuccess(id)
     }
     //const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const re = /^0(2[1-246-7]|3[1-4]|4[13-4]|5[25-6]|6[1-2]|7[15-68-9]|8[17]|91)[0-9]{7}/;
+    const re = /^[a-zA-Z0-9]+$/;
     if (!re.test(input.trim())) {
         result = {
             isNotValid: true,
@@ -165,6 +164,7 @@ function checkLength(id, input, min, max) {
     }
     return result;
 }
+
 
 
 /**
