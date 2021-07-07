@@ -1,3 +1,4 @@
 .idea/
 server/package-lock.json
 client/img
+server/node_modules
