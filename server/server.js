@@ -56,7 +56,6 @@ app.post('/register', (req, res) => {
     const HTTP_STATUS_NO_ACCEPTABLE = 406;
     //Daten des Posts-Requests auslesen und zusätzlich eine User-id erzeugen
 
-
     let userObj = {
         "id": uuidv4(),
         "firstname": req.body.user.firstname,
@@ -66,6 +65,7 @@ app.post('/register', (req, res) => {
         "email": req.body.user.email,
         "password": req.body.user.password
     }
+
 
     let result = Validation.validateUser(userObj);
     if (result.isNotValid) {
